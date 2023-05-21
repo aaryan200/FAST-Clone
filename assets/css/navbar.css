@@ -5,6 +5,9 @@
     background-color: #fff;
     height: 110px;
     padding: 0.75rem 3.75rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 .fast__navbar_logo {
@@ -67,24 +70,34 @@
     border-radius: 5px;
 }
 
-#report {
+.fast__button_report {
+    border: none;
+    margin: 0 1rem;
+    align-self: center;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
     font-family: var(--font-family);
     color: var(--color-text);
     transition: all 0.2s ease-in-out;
 }
 
-#report:hover {
+.fast__button_report:hover {
     background: #525557;
     color: #fff;
 }
 
-#contact {
+.fast__button_contact {
     background: rgb(255,41,41);
     color: #fff;
     font-family: var(--font-family);
 }
 
-#contact:hover {
+.fast__button_contact:hover {
     background: rgb(255,74,74);
 }
 

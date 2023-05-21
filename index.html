@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/welcome.css">
     <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="shortcut icon" href="./assets/imgs/favicon.png" type="image/x-icon">
+    <script src="./assets/js/swiper-bundle.min.js" defer></script>
     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
@@ -32,8 +36,8 @@
             <p><a href="#news">News</a></p>
         </div>
         <div class="fast__navbar_buttons">
-            <button type="button" id="report">Report Piracy</button>
-            <button type="button" id="contact">Contact us</button>
+            <button type="button" class="fast__button_report">Report Piracy</button>
+            <button type="button" class="fast__button_contact">Contact us</button>
         </div>
         <div class="fast__navbar_menu">
             <p><a href="#about">About Us</a></p>
@@ -66,10 +70,10 @@
         </div>
     </div>
     <div class="fast__cards_section">
+        <span class="fast__cards_bottom_background"></span>
         <div class="fast__cards">
             <div class="fast__card" id="cards__membership">
                 <div class="fast__card_top">
-                    <!-- <img src="./assets/imgs/img_10_portrait-768x1024.jpg" alt="img1"> -->
                 </div>
                 <div class="fast__card_bottom">
                     <div class="fast__card_bottom-heading">
@@ -83,7 +87,6 @@
 
             <div class="fast__card" id="cards__report">
                 <div class="fast__card_top">
-                    <!-- <img src="./assets/imgs/img_10_portrait-768x1024.jpg" alt="img1"> -->
                 </div>
                 <div class="fast__card_bottom">
                     <div class="fast__card_bottom-heading">
@@ -97,7 +100,6 @@
 
             <div class="fast__card" id="cards__legal">
                 <div class="fast__card_top">
-                    <!-- <img src="./assets/imgs/img_10_portrait-768x1024.jpg" alt="img1"> -->
                 </div>
                 <div class="fast__card_bottom">
                     <div class="fast__card_bottom-heading">
@@ -110,5 +112,107 @@
             </div>
         </div>
     </div>
+    <div class="fast__gradient_wrapper">
+        <div class="fast__news">
+            <div class="fast__news_container">
+                <span class="fast__welcome_bar"></span>
+                <h1>Latest News</h1>
+            </div>
+        </div>
+        
+        <div class="fast__news_slide">
+            <div class="fast__news-slide-container swiper">
+                <div class="fast__slide-content">
+                    <div class="fast__card_wrapper swiper-wrapper">
+                        <div class="fast__card swiper-slide" id="news_1">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>The legal importance of IP for small and medium-sized businesses within the UK</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  Hana Hassanbek – Brandsmiths  Background Protecting Intellectual Property (IP) is one of the most valuable assets for any business. IP protection is vital for growth…</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="fast__card swiper-slide" id="news_2">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>FAST join the Parliamentary Internet, Communications and Technology Forum</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  One of our aims at FAST is to strengthen the rights of Software owners. As part of that vision we are making new steps to get in front of parliamentarians, influencers and policy makers to help our members have a say in new initiatives and potential regulation.</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="fast__card swiper-slide" id="news_3">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>MHA Corporate Finance Team advises leading IT services provider Bechtle AG on acquisition of Tangible Benefit UK</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  Bechtle AG, one of Europe’s leading IT service providers, has agreed a deal to acquire London-based Tangible Benefit. Tangible Benefit is a well-known name in the…</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+    
+                        <div class="fast__card swiper-slide" id="news_4">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>FAST join the Parliamentary Internet, Communications and Technology Forum</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  One of our aims at FAST is to strengthen the rights of Software owners. As part of that vision we are making new steps to get in front of parliamentarians, influencers and policy makers to help our members have a say in new initiatives and potential regulation.</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+    
+                        <div class="fast__card swiper-slide" id="news_5">
+                            <div class="fast__card_top"></div>
+                            <div class="fast__card_bottom">
+                                <div class="fast__card_bottom-heading">
+                                    <p>MHA Corporate Finance Team advises leading IT services provider Bechtle AG on acquisition of Tangible Benefit UK</p>
+                                </div>
+                                <div class="fast__card_bottom-content">
+                                    <p>  Bechtle AG, one of Europe’s leading IT service providers, has agreed a deal to acquire London-based Tangible Benefit. Tangible Benefit is a well-known name in the…</p>
+                                </div>
+                            </div>
+                            <div class="fast__read_more">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-button-pagination"></div>
+            </div>
+        </div>
+        <div class="fast__discover_button">
+            <div class="fast__discover_container">
+                <div class="fast__discover_positioner">
+                    <button type="button" class="fast__button_report">Discover More</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

@@ -19,3 +19,71 @@
 a {
     text-decoration: none;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.fast__gradient_wrapper {
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(207, 207, 202, 1) 0%, rgba(228, 230, 233, 1) 50%, rgba(241, 243, 219, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(207, 207, 202, 1) 0%, rgba(228, 230, 233, 1) 50%, rgba(241, 243, 219, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(207, 207, 202, 1) 0%, rgba(228, 230, 233, 1) 50%, rgba(241, 243, 219, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F1F3DB', endColorstr='#CFCFCA', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(207, 207, 202, 1) 0%, rgba(228, 230, 233, 1) 50%, rgba(241, 243, 219, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(207, 207, 202, 1) 0%, rgba(228, 230, 233, 1) 50%, rgba(241, 243, 219, 1) 100%);
+}
+
+.fast__discover_button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+    /* position: relative;
+    width: 100%; */
+}
+
+.fast__discover_button .fast__discover_container {
+    width: 100%;
+    max-width: 1120px;
+    display: flex;
+    justify-content: flex-end;
+    /* display: inline-block;
+    position: absolute;
+    right: 1rem; */
+}
+
+.fast__discover_button .fast__discover_container .fast__discover_positioner {
+    margin-right: 42px;
+}
+
+.fast__discover_button .fast__discover_container .fast__discover_positioner button {
+    color: #08121c;
+    border: solid 2px #08121c;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.fast__discover_button .fast__discover_container .fast__discover_positioner button:hover {
+    color: #fff;
+    background-color: #08121c;
+}
+
+@media (max-width:750px) {
+    .fast__discover_button .fast__discover_container {
+        justify-content: center;
+    }
+    .fast__discover_button .fast__discover_container .fast__discover_positioner {
+        margin-right: 0;
+    }
+}

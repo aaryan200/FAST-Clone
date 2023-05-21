@@ -11,6 +11,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-top: 110px;
 }
 
 .fast__header .fast__header_container {
@@ -63,7 +64,7 @@
     color: #fff;
     font-family: var(--font-family);
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 10px;
     padding: 0.8rem 1.2rem;
     outline: none;
@@ -76,18 +77,18 @@
 
 .fast__header_buttons #discover {
     background-color: transparent;
-    border: 1.5px solid white;
+    border: 2px solid white;
 }
 
 .fast__header_buttons #member {
     background-color: rgb(255,41,41);
-    border: 1.5px solid red;
+    border: 2px solid red;
 }
 
 .fast__header_buttons #member:focus,
 .fast__header_buttons #member:hover {
-    background-color: rgb(245, 70, 70);
-    color: #eaeaea;
+    background-color: #a00;
+    color: #fff
 }
 
 @media (max-width: 1050px) {
@@ -177,7 +178,8 @@
 
 @media (max-width: 400px) {
     .fast__header .fast__header_container {
-        top: 6rem;
+        top: 3rem;
+        width: 67%;
     }
     .fast__header_buttons {
         display: flex;
