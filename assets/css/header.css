@@ -65,10 +65,11 @@
     font-family: var(--font-family);
     font-size: 17px;
     font-weight: 500;
-    border-radius: 10px;
-    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    padding: 0.8rem 0.9rem;
     outline: none;
     white-space: nowrap;
+    transform: skew(-15deg, 0deg);
 }
 
 .fast__header_buttons button:focus {
