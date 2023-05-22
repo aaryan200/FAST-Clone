@@ -1,7 +1,6 @@
 .fast__cards_section {
     position: relative;
     font-family: var(--font-family);
-    margin: 0 auto;
     margin-top: 10px;
     padding-bottom: 63px;
     display: flex;
@@ -110,15 +109,16 @@
     height: 249px;
     width: 100%;
     z-index: -2;
-    background-color: #f2f3f3;
+    background-color: #dbdddd;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1160px) {
     .fast__cards_bottom_background, .fast__cards_bottom_background::after {
         display: none;
     }
     .fast__cards_section {
-        background-color: #f2f3f3;
+        background-color: #dbdddd;
+        padding-bottom: 0;
     }
 }
 
